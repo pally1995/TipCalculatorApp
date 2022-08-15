@@ -8,21 +8,27 @@
   
   <title>Frontend Mentor | Tip calculator app</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <title><img src="./images/logo.svg" alt="SPLITTER Logo"></title>
+    <img src="./images/logo.svg" alt="SPLITTER Logo">
     <section class="primaryCard">
       <h3>Bill</h3>
-      <input type="number" placeholder="£" value="140">
+      <div class="billAmountInput">
+        <i><img src="./images/icon-dollar.svg" alt="Dolar Sign"></i> 
+        <input type="number" value="">
+      </div>
       <p class="tipSelection">Select Tip %</p>
       <section class="percentageChoice">
-        <Button class="5 percent"></Button>
-        <Button class="10 percent"></Button>
-        <Button class="15 percent"></Button>
-        <Button class="25 percent"></Button>
-        <Button class="50 percent"></Button>
-        <Button class="custom percent"></Button>
+        <Button class="5 percent">5%</Button>
+        <Button class="10 percent">10%</Button>
+        <Button class="15 percent">15%</Button>
+        <Button class="25 percent">25%</Button>
+        <Button class="50 percent">50%</Button>
+        <Button class="custom percent">Custom</Button>
       </section>
       <p class="numberOfPeople">Number of People</p>
       <input type="number" class="numberOfPeople" value="5">
@@ -30,8 +36,6 @@
         <p class="tipAmount">Tip Amount <span class="pp">/ person</span><span class="tipPerPerson">£5.21</span></p>
         <p class="totalTipAmount">Total <span class="pp">/ person</span><span class="totalPerPerson">£5.21</span></p>
       </section>
-
-
     </section>
   </div>
   <script src="app.js"></script>
