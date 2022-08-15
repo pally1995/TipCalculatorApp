@@ -10,7 +10,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <title><img src="./images/logo.svg" alt="SPLITTER Logo"></title>
+    <section class="primaryCard">
+      <h3>Bill</h3>
+      <input type="number" placeholder="£" value="140">
+      <p class="tipSelection">Select Tip %</p>
+      <section class="percentageChoice">
+        <Button class="5 percent"></Button>
+        <Button class="10 percent"></Button>
+        <Button class="15 percent"></Button>
+        <Button class="25 percent"></Button>
+        <Button class="50 percent"></Button>
+        <Button class="custom percent"></Button>
+      </section>
+      <p class="numberOfPeople">Number of People</p>
+      <input type="number" class="numberOfPeople" value="5">
+      <section class="secondaryCard">
+        <p class="tipAmount">Tip Amount <span class="pp">/ person</span><span class="tipPerPerson">£5.21</span></p>
+        <p class="totalTipAmount">Total <span class="pp">/ person</span><span class="totalPerPerson">£5.21</span></p>
+      </section>
 
+
+    </section>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
