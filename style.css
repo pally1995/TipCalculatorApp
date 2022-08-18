@@ -242,3 +242,22 @@ button:active, button:focus {
     background: hsl(172, 67%, 45%);
     color:hsl(183, 100%, 15%);
 }
+
+@media only screen and (max-width: 1370px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .primaryCard {
+        display: flex;
+        flex-direction: row;
+        width: 50vw;
+    }
+
+    .secondaryCard {
+        width: 50vw;
+        
+    }
+}
