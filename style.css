@@ -45,7 +45,6 @@ table {
 /* CSS RESET  */
 
 /* Styling  */
-
 body {
     font-family: 'Space Mono', monospace;
     color: hsl(186, 14%, 43%);
@@ -53,7 +52,6 @@ body {
 }
 .container {
     background: hsl(185, 41%, 84%);
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -80,22 +78,27 @@ h3 {
 
 .billAmountInput {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
+    margin: 1rem auto;
 }
 
 input[type="number"] {
     position: absolute;
-    width: 85%;
+    width: 83%;
     height: 2.2rem;
     border: none;
     background: hsl(189, 41%, 97%)
 }
 
+input[type="number"].focus {
+    outline: 3px solid hsl(172, 67%, 84%);
+}
+
 i > img {
     position: relative;
-    bottom: 1.3rem;
-    right: 9.5rem;
+    bottom: 1.4rem;
+    right: 9rem;
     width: 0.7rem;
     height: auto;
     z-index: 2;
@@ -103,6 +106,10 @@ i > img {
   
 .tipSelection {
     margin: 0.6rem 0 0.5rem 1.8rem; 
+}
+
+.percentageChoice {
+    max-width: 100%;
 }
 
 button {
@@ -119,30 +126,63 @@ button {
     font-family: 'Space Mono', monospace;
     border: none;
     padding: 0 2rem;
+    cursor: pointer;
 }
 
-.custom {
+#customPercent {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+    margin: 1rem 0 1rem 1.8rem;
+    height: 3rem;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    border: none;
+    padding: 0 2rem;
+    font-family: 'Space Mono', monospace;
     background: hsl(189, 41%, 97%);
     color: hsl(184, 14%, 56%);
+    cursor: pointer;
 }
+
+#customPercent:focus {
+    outline: 3px solid hsl(172, 67%, 84%); 
+}
+
+button:hover {
+    background: hsl(185, 41%, 84%);
+    color:hsl(183, 100%, 15%)
+}
+
+button:active, button:focus {
+    background: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+}
+
 
 .numberOfPeople {
     margin: 0.6rem 0 0.5rem 1.8rem; 
 }
 
+.numberOfPeopleValueDiv {
+    display: flex;
+    justify-content: center;
+}
+
 .numberOfPeopleValue {
     position: absolute;
-    width: 100%;
+    width: 83%;
     height: 2.2rem;
     border: none;
-    background: hsl(189, 41%, 97%)
+    background: hsl(189, 41%, 97%);
 }
 
 .personIcon {
     position: relative;
     z-index: 100;
     bottom: 1.4rem;
-    right: 0.3rem;
+    right: 1.3rem;
     width: 0.8rem;
     height: auto;
   }
@@ -190,4 +230,15 @@ button {
     text-align: center;
     margin: 1.5rem auto 0.5rem auto;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background: hsl(185, 41%, 84%);
+    color:hsl(183, 100%, 15%)
+}
+
+.reset:active, .reset:focus {
+    background: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
 }
