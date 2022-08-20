@@ -83,14 +83,13 @@ h3 {
 }
 
 .billAmountInput {
-    display: flex;
-    justify-content: space-around;
+    position: relative;
+    display: inline-block;
     width: 100%;
     margin: 1rem auto;
 }
 
 input[type="number"] {
-    position: absolute;
     width: 83%;
     height: 2.2rem;
     border: none;
@@ -102,9 +101,9 @@ input[type="number"].focus {
 }
 
 i > img {
-    position: relative;
-    bottom: 1.4rem;
-    right: 9rem;
+    position: absolute;
+    bottom: -22px;
+    left: -20px;
     width: 0.7rem;
     height: auto;
     z-index: 2;
@@ -172,12 +171,14 @@ button:active, button:focus {
 }
 
 .numberOfPeopleValueDiv {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 1rem auto;
+
 }
 
 .numberOfPeopleValue {
-    position: absolute;
     width: 83%;
     height: 2.2rem;
     border: none;
@@ -185,10 +186,10 @@ button:active, button:focus {
 }
 
 .personIcon {
-    position: relative;
+    position: abosolute;
     z-index: 100;
-    bottom: 1.4rem;
-    right: 1.3rem;
+    bottom: rem;
+    right: rem;
     width: 0.8rem;
     height: auto;
   }
@@ -249,7 +250,7 @@ button:active, button:focus {
     color:hsl(183, 100%, 15%);
 }
 
-@media only screen and (max-width: 1370px) {
+/* @media only screen and (max-width: 1370px) {
     body {
         background:hsl(185, 41%, 84%);
     }
@@ -272,15 +273,8 @@ button:active, button:focus {
         height: 80%;
     }
 
-    input[type="number"] {
-        width: 30%;
-        margin: 0 0 0 1.7rem;
-    }
-    
+} */
 
-    i > img {
-        right: 6.5rem;
-    }
 
 
 
