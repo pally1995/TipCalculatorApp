@@ -58,6 +58,12 @@ body {
     align-items: center;
 }
 
+h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 img {
     margin: 2rem;
     width: 5rem;
@@ -244,20 +250,38 @@ button:active, button:focus {
 }
 
 @media only screen and (max-width: 1370px) {
+    body {
+        background:hsl(185, 41%, 84%);
+    }
     .container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        margin: 0 auto;
+        flex-direction: row;
+        background: white;
+        border-radius: 10px;
+        width: 80%;
+        height: 80vh;
     }
 
     .primaryCard {
-        display: flex;
-        flex-direction: row;
-        width: 50vw;
+        min-height: 80vh;
+        width: 50%;
     }
 
     .secondaryCard {
-        width: 50vw;
-        
+        width: 50%;
+        height: 80%;
     }
+
+    input[type="number"] {
+        width: 30%;
+        margin: 0 0 0 1.7rem;
+    }
+    
+
+    i > img {
+        right: 6.5rem;
+    }
+
+
+
 }
