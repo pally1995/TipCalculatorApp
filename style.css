@@ -93,6 +93,8 @@ input[type="number"] {
     width: 83%;
     height: 2.2rem;
     border: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
     background: hsl(189, 41%, 97%)
 }
 
@@ -103,7 +105,7 @@ input[type="number"].focus {
 i > img {
     position: absolute;
     bottom: -22px;
-    left: -20px;
+    left: 5px;
     width: 0.7rem;
     height: auto;
     z-index: 2;
@@ -138,11 +140,11 @@ button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 21%;
-    margin: 1rem 0 1rem 1.8rem;
+    width: 15%;
+    margin: 1rem 0 1rem 5.7rem;
     height: 3rem;
     border-radius: 8px;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     border: none;
     padding: 0 2rem;
     font-family: 'Space Mono', monospace;
@@ -183,13 +185,13 @@ button:active, button:focus {
     height: 2.2rem;
     border: none;
     background: hsl(189, 41%, 97%);
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 .personIcon {
     position: abosolute;
     z-index: 100;
-    bottom: rem;
-    right: rem;
     width: 0.8rem;
     height: auto;
   }
