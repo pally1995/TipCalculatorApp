@@ -8,40 +8,47 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /* CSS RESET  */
 
 /* Styling  */
@@ -50,6 +57,7 @@ body {
     color: hsl(186, 14%, 43%);
     font-weight: 700;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -105,17 +113,17 @@ input[type="number"].focus {
     outline: 3px solid hsl(172, 67%, 84%);
 }
 
-i > img {
+i>img {
     position: absolute;
     bottom: -22px;
     left: 5px;
     width: 0.7rem;
     height: auto;
     z-index: 2;
-  }
-  
+}
+
 .tipSelection {
-    margin: 0.6rem 0 0.5rem 1.8rem; 
+    margin: 0.6rem 0 0.5rem 1.8rem;
 }
 
 .percentageChoice {
@@ -155,22 +163,22 @@ button {
 
 
 #customPercent:focus {
-    outline: 3px solid hsl(172, 67%, 84%); 
+    outline: 3px solid hsl(172, 67%, 84%);
 }
 
 button:hover {
     background: hsl(185, 41%, 84%);
-    color:hsl(183, 100%, 15%)
+    color: hsl(183, 100%, 15%)
 }
 
 button:active, button:focus {
     background: hsl(172, 67%, 45%);
-    color:hsl(183, 100%, 15%);
+    color: hsl(183, 100%, 15%);
 }
 
 
 .numberOfPeople {
-    margin: 0.6rem 0 0.5rem 1.8rem; 
+    margin: 0.6rem 0 0.5rem 1.8rem;
 }
 
 .numberOfPeopleValueDiv {
@@ -196,8 +204,8 @@ button:active, button:focus {
     z-index: 100;
     width: 0.8rem;
     height: auto;
-  }
-  
+}
+
 
 .secondaryCard {
     padding: 1rem;
@@ -235,7 +243,7 @@ button:active, button:focus {
 .reset {
     display: block;
     background: hsl(172, 67%, 45%);
-    color:hsl(183, 100%, 15%);
+    color: hsl(183, 100%, 15%);
     width: 90%;
     font-size: 1.2rem;
     text-align: center;
@@ -246,18 +254,23 @@ button:active, button:focus {
 
 .reset:hover {
     background: hsl(185, 41%, 84%);
-    color:hsl(183, 100%, 15%)
+    color: hsl(183, 100%, 15%)
 }
 
 .reset:active, .reset:focus {
     background: hsl(172, 67%, 45%);
-    color:hsl(183, 100%, 15%);
+    color: hsl(183, 100%, 15%);
 }
 
-/* @media only screen and (max-width: 1370px) {
+@media only screen and (min-width: 1365px) {
     body {
-        background:hsl(185, 41%, 84%);
+        background: hsl(185, 41%, 84%);
     }
+
+    h1 {
+        background: none;
+    }
+
     .container {
         margin: 0 auto;
         flex-direction: row;
@@ -277,6 +290,62 @@ button:active, button:focus {
         height: 80%;
     }
 
-} */
+    input[type="number"] {
+        width: 90%;
+        height: 2.2rem;
+        border: none;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background: hsl(189, 41%, 97%);
+        text-indent: 30%;
+        font-family: 'Space Mono', monospace;
+        font-size: 1.3rem;
+        color: hsl(184, 14%, 56%);
+    }
+
+    input[type="number"]::placeholder {
+        text-align: end;
+    }
+
+    .numberOfPeopleValue {
+        width: 90%;
+        height: 2.2rem;
+        border: none;
+        background: hsl(189, 41%, 97%);
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-indent: 32px;
+    }
 
 
+    .pp {
+        color: hsl(184, 14%, 56%);
+        font-size: 0.85rem;
+        margin-top: -0.9rem;
+    }
+
+    .tipAmount, .totalTipAmount {
+        margin-top: 2rem;
+    }
+
+    .tipPerPerson {
+        vertical-align: center;
+        margin-left: 15rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        color: hsl(172, 67%, 45%)
+    }
+
+    .totalPerPerson {
+        vertical-align: center;
+        margin-left: 18rem;
+        margin-top: 2rem;
+        font-size: 2rem;
+        color: hsl(172, 67%, 45%)
+    }
+
+    .reset {
+        margin-top: 12rem;
+    }
+
+}
