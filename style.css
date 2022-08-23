@@ -317,6 +317,18 @@ button:active, button:focus {
         text-indent: 32px;
     }
 
+    #customPercent {
+        width: 35%;
+        margin: 1rem 0 1rem 7rem;
+        height: 3rem;
+        border-radius: 8px;
+        font-size: 1.3rem;
+        border: none;
+        font-family: 'Space Mono', monospace;
+        background: hsl(189, 41%, 97%);
+        color: hsl(184, 14%, 56%);
+        cursor: pointer;
+    }
 
     .pp {
         color: hsl(184, 14%, 56%);
