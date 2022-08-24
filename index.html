@@ -19,7 +19,7 @@
       <h3>Bill</h3>
       <div class="billAmountInput">
         <i><img src="./images/icon-dollar.svg" alt="Dolar Sign"></i> 
-        <input type="number" value="">
+        <input type="number" id="amountInput">
       </div>
       <p class="tipSelection">Select Tip %</p>
           <section class="percentageChoice">
@@ -37,11 +37,12 @@
           </div>
           </section>
           <section class="secondaryCard">
-            <p class="tipAmount">Tip Amount<span class="tipPerPerson">£5.21</span></p>
+            <p class="tipAmount">Tip Amount<span class="tipPerPerson"></span></p>
             <p class="pp">/ person</p>
-            <p class="totalTipAmount">Total<span class="totalPerPerson">£5.21</span></p>
+            <p class="totalTipAmount">Total<span class="totalPerPerson"></span></p>
             <p class="pp">/ person</p>
-            <button class="reset">RESET</button>
+            <button class="calc">Calculate</button>
+            <button class="reset">Reset</button>
           </section>
   </div>
   <script src="app.js"></script>
