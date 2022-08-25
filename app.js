@@ -8,13 +8,13 @@ const tipPerPerson = document.querySelector(".totalPerPerson");
 const totalPerPerson = document.querySelector(".tipPerPerson");
 const reset = document.querySelector(".reset");
 
-let tipVal = 0;
+let tipVal;
 let billVal;
 let numberOfPeopleVal;
 
 billAmount.addEventListener("input", () => {
   billVal = billAmount.value;
-  if (numberOfPeopleVal != 0) {
+  if (numberOfPeopleVal >= 0) {
     updateTotal();
     updateTipAmount();
   }
@@ -22,7 +22,7 @@ billAmount.addEventListener("input", () => {
 
 numberOfPeopleValue.addEventListener("click", () => {
   numberOfPeopleVal = numberOfPeopleValue.value;
-  if (numberOfPeopleVal != 0) {
+  if (numberOfPeopleVal >= 0) {
     updateTotal();
     updateTipAmount();
   }
@@ -41,5 +41,5 @@ function updateTotal() {
 }
 
 function updateTipAmount() {
-  tipPerPerson.innerHTML = totalPerPerson / numberOfPeopleVal;
+  tipPerPerson.innerHTML =  ((billVal / 100) * tipVal) / numberOfPeopleVal;
 }
