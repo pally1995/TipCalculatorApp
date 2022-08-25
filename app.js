@@ -32,6 +32,7 @@ percent.forEach((button) => {
     if (billVal != null && numberOfPeopleVal != null) {
       tipVal = button.innerHTML.replace("%", "");
       updateTipAmount();
+      updateTotal();
     }
   });
 });
