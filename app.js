@@ -14,7 +14,7 @@ let numberOfPeopleVal;
 
 billAmount.addEventListener("input", () => {
   billVal = billAmount.value;
-  if (numberOfPeopleVal >= 0) {
+  if (numberOfPeopleVal > 0) {
     updateTotal();
     updateTipAmount();
   }
@@ -22,17 +22,18 @@ billAmount.addEventListener("input", () => {
 
 numberOfPeopleValue.addEventListener("input", () => {
   numberOfPeopleVal = numberOfPeopleValue.value;
-  if (numberOfPeopleVal >= 0) {
+  if (numberOfPeopleVal > 0) {
     updateTotal();
     updateTipAmount();
   }
 });
+
 percent.forEach((button) => {
   button.addEventListener("click", () => {
     if (billVal != null && numberOfPeopleVal != null) {
       tipVal = button.innerHTML.replace("%", "");
-      updateTipAmount();
       updateTotal();
+      updateTipAmount();
     }
   });
 });
