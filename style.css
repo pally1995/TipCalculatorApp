@@ -62,6 +62,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 100vw;
 }
 
 h1 {
@@ -103,7 +104,7 @@ input[type="number"] {
     margin-left: 50%;
     transform: translateX(-50%);
     background: hsl(189, 41%, 97%);
-    text-indent: 20px;
+    text-align: right;
     font-family: 'Space Mono', monospace;
     font-size: 1.3rem;
     color: hsl(184, 14%, 56%);
@@ -196,7 +197,7 @@ button:active, button:focus {
     background: hsl(189, 41%, 97%);
     margin-left: 50%;
     transform: translateX(-50%);
-    text-indent: 22px;
+    text-align: right;
 }
 
 .personIcon {
@@ -211,6 +212,7 @@ button:active, button:focus {
     padding: 1rem;
     margin: 1rem 1em;
     background: hsl(183, 100%, 15%);
+    width: 75%;
     height: auto;
     color: white;
     border-radius: 15px;
@@ -240,22 +242,13 @@ button:active, button:focus {
     color: hsl(172, 67%, 45%)
 }
 
-.calc {
-    display: inline;
-    background: hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
-    width: 45%;
-    font-size: 1.2rem;
-    margin: 1.5rem auto 0rem auto;
-    border-radius: 10px;
-    cursor: pointer;
-}
+
 
 .reset {
-    display: inline;
+    display: block;
     background: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
-    width: 45%;
+    width: 90%;
     font-size: 1.2rem;
     margin: 1.5rem auto 0rem auto;
     border-radius: 10px;
@@ -274,7 +267,7 @@ button:active, button:focus {
     color: hsl(183, 100%, 15%);
 }
 
-@media only screen and (min-width: 1365px) {
+@media only screen and (min-width: 1360px) {
     body {
         background: hsl(185, 41%, 84%);
     }
