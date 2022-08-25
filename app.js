@@ -4,8 +4,8 @@ const customPerc = document.querySelector("#customPercent").value;
 const numberOfPeopleValue = document.querySelector(".numberOfPeopleValue");
 
 
-const tipPerPerson = document.querySelector(".totalPerPerson");
-const totalTip = document.querySelector(".tipPerPerson");
+const totalTip = document.querySelector(".totalTip");
+const tipPerPerson = document.querySelector(".tipPerPerson");
 const reset = document.querySelector(".reset");
 
 let tipVal;
