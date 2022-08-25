@@ -218,7 +218,7 @@ button:active, button:focus {
     border-radius: 15px;
 }
 
-.tipAmount, .totalTipAmount, .pp {
+.tipAmount, .totalTip, .pp {
     margin: 1.2rem;
 }
 
@@ -235,7 +235,7 @@ button:active, button:focus {
     color: hsl(172, 67%, 45%)
 }
 
-.totalPerPerson {
+.totalTip{
     vertical-align: center;
     margin-left: 7rem;
     font-size: 1.5rem;
