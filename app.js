@@ -39,9 +39,9 @@ percent.forEach((button) => {
 });
 
 function updateTipPerPerson() {
-  totalTip.innerHTML = ((billVal / 100) * tipVal) / numberOfPeopleVal;
+  tipPerPerson.innerHTML = ((billVal / 100) * tipVal) / numberOfPeopleVal;
 }
 
 function updateTotalTip() {
-  tipPerPerson.innerHTML =  (billVal / 100) * tipVal;
+  totalTip.innerHTML =  (billVal / 100) * tipVal;
 }
