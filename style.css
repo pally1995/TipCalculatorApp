@@ -151,7 +151,7 @@ button {
 #customPercent {
     text-align: left;
     width: 32%;
-    margin: 1rem 0 1rem 5.45rem;
+    margin: 1rem 0 1rem 7rem;
     height: 3rem;
     border-radius: 8px;
     font-size: 1.3rem;
@@ -160,6 +160,11 @@ button {
     background: hsl(189, 41%, 97%);
     color: hsl(184, 14%, 56%);
     cursor: pointer;
+}
+
+
+#customPercent::placeholder {
+    text-align: center;
 }
 
 
@@ -177,6 +182,10 @@ button:active, button:focus {
     color: hsl(183, 100%, 15%);
 }
 
+.activeBtn {
+    background: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
 
 .numberOfPeople {
     margin: 0.6rem 0 0.5rem 1.8rem;
@@ -222,10 +231,14 @@ button:active, button:focus {
     margin: 1.2rem;
 }
 
+.totalTipAmount {
+    margin-left: 1.2rem;
+}
+
 .pp {
     color: hsl(184, 14%, 56%);
     font-size: 0.85rem;
-    margin-top: -0.9rem;
+    
 }
 
 .tipPerPerson {
@@ -267,7 +280,7 @@ button:active, button:focus {
     color: hsl(183, 100%, 15%);
 }
 
-@media only screen and (min-width: 1360px) {
+@media only screen and (min-width: 1100px) {
     body {
         background: hsl(185, 41%, 84%);
     }
@@ -323,12 +336,13 @@ button:active, button:focus {
     }
 
     #customPercent {
-        width: 35%;
+        width: 31%;
         margin: 1rem 0 1rem 7rem;
         height: 3rem;
         border-radius: 8px;
         font-size: 1.3rem;
         border: none;
+        text-align: left;
         font-family: 'Space Mono', monospace;
         background: hsl(189, 41%, 97%);
         color: hsl(184, 14%, 56%);
@@ -338,7 +352,6 @@ button:active, button:focus {
     .pp {
         color: hsl(184, 14%, 56%);
         font-size: 0.85rem;
-        margin-top: -0.9rem;
     }
 
     .tipAmount, .totalTipAmount {
@@ -362,7 +375,7 @@ button:active, button:focus {
     }
 
     .reset {
-        margin-top: 12rem;
+        margin: 9rem auto 0rem auto;
     }
 
 }

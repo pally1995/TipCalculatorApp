@@ -4,17 +4,23 @@ const customPerc = document.querySelector("#customPercent").value;
 const numberOfPeopleValue = document.querySelector(".numberOfPeopleValue");
 
 
-const totalTip = document.querySelector(".totalTip");
 const tipPerPerson = document.querySelector(".tipPerPerson");
+const totalTip = document.querySelector(".totalTip");
 const reset = document.querySelector(".reset");
 
 let tipVal;
 let billVal;
 let numberOfPeopleVal;
 
+tipPerPerson.innerHTML = "$00.00"
+totalTip.innerHTML = "$00.00"
+
 billAmount.addEventListener("input", () => {
   billVal = billAmount.value;
-  if (numberOfPeopleVal > 0) {
+  if (billAmount.value <= 0) {
+    tipPerPerson.innerHTML = "$00.00"
+    totalTip.innerHTML = "$00.00"
+  } else {
     updateTotalTip();
     updateTipPerPerson();
   }
@@ -22,7 +28,10 @@ billAmount.addEventListener("input", () => {
 
 numberOfPeopleValue.addEventListener("input", () => {
   numberOfPeopleVal = numberOfPeopleValue.value;
-  if (numberOfPeopleVal > 0) {
+  if (numberOfPeopleVal.value <= 0) {
+    tipPerPerson.innerHTML = "$00.00"
+    totalTip.innerHTML = "$00.00"
+  }else {
     updateTotalTip();
     updateTipPerPerson();
   }
@@ -33,15 +42,14 @@ percent.forEach((button) => {
     if (billVal != null && numberOfPeopleVal != null) {
       tipVal = button.innerHTML.replace("%", "");
       updateTotalTip();
-       updateTipPerPerson();
+      updateTipPerPerson();
     }
   });
 });
 
 function updateTipPerPerson() {
-  tipPerPerson.innerHTML = ((billVal / 100) * tipVal) / numberOfPeopleVal;
-}
+  tipPerPerson.innerHTML = "$" + ((billVal / 100) * tipVal) / numberOfPeopleVal.toFixed;
 
 function updateTotalTip() {
-  totalTip.innerHTML =  (billVal / 100) * tipVal;
+  totalTip.innerHTML =  "$" + (billVal / 100) * tipVal;
 }
