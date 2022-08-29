@@ -62,7 +62,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 100vw;
+    width: 100vw;
 }
 
 h1 {
@@ -294,18 +294,18 @@ button.active {
         flex-direction: row;
         background: white;
         border-radius: 10px;
-        width: 80%;
-        height: 80vh;
+        width: 70%;
+        height: 30%;
     }
 
     .primaryCard {
-        min-height: 80vh;
-        width: 50%;
+        height: 30%;
+        width: 70%;
     }
 
     .secondaryCard {
-        width: 50%;
-        height: 80%;
+        width: 60%;
+        height: 30%;
     }
 
     input[type="number"] {
@@ -335,14 +335,20 @@ button.active {
         text-indent: 32px;
     }
 
+    button {
+        margin: 1rem;
+        width: 29%;
+    }
+
     #customPercent {
-        width: 32%;
-        margin: 1rem 0 1rem 8.2rem;
+        width: 29%;
+        margin: 1rem;
+        margin-left: 5rem;
         height: 3rem;
         border-radius: 8px;
         font-size: 1.3rem;
         border: none;
-        text-align: center;
+        text-align: left;
         font-family: 'Space Mono', monospace;
         background: hsl(189, 41%, 97%);
         color: hsl(184, 14%, 56%);
@@ -375,7 +381,7 @@ button.active {
     }
 
     .reset {
-        margin: 9rem auto 0rem auto;
+        margin: 4rem auto 0rem auto;
     }
 
 }
