@@ -177,12 +177,12 @@ button:hover {
     color: hsl(183, 100%, 15%)
 }
 
-button:active, button:focus {
+button:focus {
     background: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }
 
-.activeBtn {
+button.active {
     background: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }
