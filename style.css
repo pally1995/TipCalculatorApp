@@ -98,7 +98,7 @@ h3 {
     margin: 1rem auto;
 }
 
-input[type="number"] {
+#amountInput {
     width: 83%;
     height: 2.2rem;
     border: none;
@@ -111,7 +111,7 @@ input[type="number"] {
     color: hsl(184, 14%, 56%);
 }
 
-input[type="number"].focus {
+#amountInput.focus {
     outline: 3px solid hsl(172, 67%, 84%);
 }
 
