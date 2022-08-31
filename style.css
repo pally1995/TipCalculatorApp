@@ -53,17 +53,10 @@ table {
 
 /* Styling  */
 
- * {
-   outline: 1px solid red !important;
-   opacity: 1 !important;
-   visibility: visible !important
-}
-
 body {
     font-family: 'Space Mono', monospace;
     color: hsl(186, 14%, 43%);
     font-weight: 700;
-    overflow-x: hidden;
 }
 
 .container {
@@ -233,6 +226,7 @@ button.active {
     height: auto;
     color: white;
     border-radius: 15px;
+    overflow-x: hidden;
 }
 
 .tipAmount, .totalPerPerson, .pp {
