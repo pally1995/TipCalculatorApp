@@ -52,6 +52,13 @@ table {
 /* CSS RESET  */
 
 /* Styling  */
+
+ * {
+   outline: 1px solid red !important;
+   opacity: 1 !important;
+   visibility: visible !important
+}
+
 body {
     font-family: 'Space Mono', monospace;
     color: hsl(186, 14%, 43%);
